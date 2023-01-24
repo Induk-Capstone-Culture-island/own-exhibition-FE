@@ -5,7 +5,7 @@ import { UserOutlined, ExportOutlined } from "@ant-design/icons";
 import LogoBlack from "../assets/img/logo_black.svg";
 import LogoWhite from "../assets/img/logo_white.svg";
 import { useRecoilValue } from "recoil";
-import { isLightAtom } from "../atom";
+import { isLightAtom } from "../atoms/heartAtom";
 
 function Header() {
   const loginMatch = useMatch("/");

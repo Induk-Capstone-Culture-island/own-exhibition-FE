@@ -37,8 +37,8 @@ function Register() {
         console.log(response);
         navigate("/");
       })
-      .catch((err) => {
-        console.log(err);
+      .catch((error) => {
+        alert("중복된 이메일입니다.");
       });
   };
 
@@ -109,10 +109,6 @@ function Register() {
           <Input
             {...register("phoneNum", {
               required: "항목을 입력해주세요",
-              // pattern: {
-              //   value: /^\d{3}-\d{3,4}-\d{4}$/,
-              //   message: "숫자, -을 포함해 휴대전화 형식에 맞게 입력해주세요.",
-              // },
             })}
             type="text"
             placeholder="전화번호 입력 ex)01012341234"

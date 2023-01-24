@@ -4,18 +4,18 @@ import Login from "./pages/Login";
 import MyPage from "./pages/Mypage";
 import UpdateInfo from "./components/Auth/UpdateInfo";
 import UpdatePw from "./components/Auth/UpdatePw";
-import GlobalStyle from "./GlobalStyle";
+import GlobalStyle from "./styles/GlobalStyle";
 import Register from "./pages/Register";
 import FindPw from "./components/Auth/FindPw";
 import Header from "./components/Header";
 import Main from "./pages/Main";
 import Footer from "./components/Footer";
 import Detail from "./pages/Detail";
-import { darkTheme, lightTheme } from "./theme";
-import ScrollToTop from "./components/Hooks/ScrollToTop";
+import { darkTheme, lightTheme } from "./styles/theme";
+import ScrollToTop from "./hooks/ScrollToTop";
 import icon from "./assets/img/darkmode.png";
 import { useRecoilValue, useSetRecoilState } from "recoil";
-import { isLightAtom } from "./atom";
+import { isLightAtom } from "./atoms/heartAtom";
 
 function App() {
   const isLight = useRecoilValue(isLightAtom);

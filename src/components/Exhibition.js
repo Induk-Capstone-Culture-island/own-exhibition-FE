@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import styled from "styled-components";
 import Card from "./Card";
-import CatBtn from "./Hooks/CatBtn";
+import CatBtn from "../hooks/CatBtn";
 
 function Exhibition({ data }) {
   const [activeCat, setActiveCat] = useState("전체");
@@ -51,7 +51,7 @@ function Exhibition({ data }) {
           handleSetCat={setActiveCat}
         />
       </ButtonWrapper>
-      <CardList id="scroll-bottom">
+      <CardList>
         {search.map((data, i) => (
           <Card key={i} {...data} />
         ))}

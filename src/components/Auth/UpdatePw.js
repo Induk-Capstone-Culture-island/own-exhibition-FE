@@ -23,29 +23,30 @@ function UpdatePw() {
         { message: "Passwords are not the same." },
         { shouldFocus: true }
       );
-    }
-    setError("extraError", { message: "비밀번호를 올바르게 입력해주세요." });
-    axios
-      .post(
-        "http://13.125.82.62/api/changepassword",
-        {
-          old_password: data.oldPassword,
-          password: data.password,
-          confirm_password: data.pwCheck,
-        },
-        {
-          headers: {
-            Authorization: `Bearer ${accessToken}`,
+    } else {
+      axios
+        .post(
+          "http://13.125.82.62/api/changepassword",
+          {
+            old_password: data.oldPassword,
+            password: data.password,
+            confirm_password: data.pwCheck,
           },
-        }
-      )
-      .then((response) => {
-        console.log(response);
-        navigate("/mypage");
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+          {
+            headers: {
+              Authorization: `Bearer ${accessToken}`,
+            },
+          }
+        )
+        .then((response) => {
+          console.log(response);
+          navigate("/mypage");
+        })
+        .catch((err) => {
+          alert("비밀번호를 다시 확인해주세요.");
+          console.log(err);
+        });
+    }
   };
 
   const onCancle = () => {
@@ -96,10 +97,9 @@ function UpdatePw() {
                     message: "8자리 이상의 비밀번호를 입력해주세요.",
                   },
                 })}
-                type="text"
+                type="password"
                 autoComplete="off"
               />
-              <span>{errors?.password?.message}</span>
               <p>새 비밀번호</p>
               <input
                 {...register("password", {
@@ -114,7 +114,7 @@ function UpdatePw() {
                   },
                 })}
                 defaultValue={data.password}
-                type="text"
+                type="password"
                 autoComplete="off"
               />
               <span>{errors?.password?.message}</span>
@@ -134,11 +134,12 @@ function UpdatePw() {
                   },
                 })}
                 defaultValue={data.password_confirmation}
-                type="text"
+                type="password"
                 autoComplete="off"
               />
               <span>{errors?.pwCheck?.message}</span>
             </InputBox>
+            <span>{errors?.extraError?.message}</span>
             <div>
               <button onClick={onCancle}>취소</button>
               <button>확인</button>
@@ -151,8 +152,9 @@ function UpdatePw() {
 }
 
 const Container = styled.div`
-  /* padding-bottom: 50px; */
-  padding: 68px 0 57px 0;
+  @media screen and (max-width: 1920px) {
+    padding: 100px 0 100px 0;
+  }
 `;
 
 const MyPageBox = styled.div`

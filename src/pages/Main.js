@@ -7,7 +7,7 @@ import axios from "axios";
 import { Helmet } from "react-helmet";
 import { Link } from "react-scroll";
 import Exhibition from "../components/Exhibition";
-import Paging from "../components/Hooks/Paging";
+import Paging from "../hooks/Paging";
 
 function Main() {
   const [loading, setLoading] = useState(true);
@@ -65,9 +65,9 @@ function Main() {
       <VisualBox>
         <img src={background} className="background" alt="background" />
         <h3 className="visualText">
-          전시회 고민하지 말고,
+          전시회, 어디 갈지 고민이라면
           <br />
-          '너만의 전시회'
+          '너만의 전시회'를 찾아봐!
         </h3>
         <div className="button-wrapper">
           <Link
@@ -84,7 +84,7 @@ function Main() {
       </VisualBox>
       <Wrapper>
         <div className="searchTab">
-          <Title>현재 전시</Title>
+          <Title id="scroll-bottom">현재 전시</Title>
         </div>
         <Exhibition data={data} />
         <Paging
@@ -111,7 +111,7 @@ const LoadingPage = styled.div`
 const Container = styled.div``;
 
 const VisualBox = styled.section`
-  height: 770px;
+  height: 772px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -120,6 +120,18 @@ const VisualBox = styled.section`
   background-blend-mode: darken;
   @media screen and (min-width: 1920px) {
     height: 970px;
+  }
+
+  .background {
+    position: absolute;
+    width: 100vw;
+    height: 772px;
+    top: 0;
+    z-index: -10;
+    background-position: center;
+    @media screen and (min-width: 1920px) {
+      height: 970px;
+    }
   }
 
   .button-wrapper {
@@ -141,17 +153,6 @@ const VisualBox = styled.section`
     &:hover {
       background-color: rgb(255, 255, 255, 0.2);
       transition: all 0.5s ease;
-    }
-  }
-  .background {
-    position: absolute;
-    width: 100vw;
-    height: 770px;
-    top: 0;
-    z-index: -10;
-    background-position: center;
-    @media screen and (min-width: 1920px) {
-      height: 970px;
     }
   }
 
