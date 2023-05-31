@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+![image](https://github.com/Induk-Capstone-Culture-island/own-exhibition-FE/assets/48711263/21452356-68db-46ac-871b-5f97d2d340f0)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### 서비스 소개
 
-In the project directory, you can run:
+> 접근성과 편리성을 가지고 있는 전시회 정보 제공 서비스
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 개발 기간
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- 2022.10.31 ~ 2022.12.11
 
-### `npm test`
+### 팀원
+| Front-end | Back-end |
+| --- | --- |
+| [김태현](https://github.com/thyeone) | [전영준](https://github.com/JayYJ1) |
+### 기술 스택
+#### Front-End
+- `React.js`
+- `styled-components` `react-hook-form`
+- `Kakao Map API`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Back-End
+- `PHP` `Laravel`
+- `mysql`
 
-### `npm run build`
+### 통신 구조
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![image](https://github.com/Induk-Capstone-Culture-island/own-exhibition-FE/assets/48711263/938a9c94-ee3b-457e-8799-b4834c7161fa)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 👨🏻‍🎨 페이지 및 기능
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+| 회원가입 및 로그인 | 전시회 목록 |
+| --- | --- |
+| <img src='https://github.com/Induk-Capstone-Culture-island/own-exhibition-FE/assets/48711263/3b31fb2a-68c7-4445-9bb8-fd6182d02e8c' width="1200" /> | ![2](https://github.com/Induk-Capstone-Culture-island/own-exhibition-FE/assets/48711263/911714b4-6052-438b-8957-94e90572ef1c) |
+| 전시회 상세페이지 | 찜 기능 |
+| ![3](https://github.com/Induk-Capstone-Culture-island/own-exhibition-FE/assets/48711263/997197b5-ed07-4557-836f-265032fd4a77) | ![4](https://github.com/Induk-Capstone-Culture-island/own-exhibition-FE/assets/48711263/af71c0dd-09fc-498a-b750-8525d27b95b0) | 
+| 정보 수정 | 비밀번호 변경 |
+| ![5](https://github.com/Induk-Capstone-Culture-island/own-exhibition-FE/assets/48711263/b1873e5e-0a66-4869-b920-f3a039d3907e) |![6](https://github.com/Induk-Capstone-Culture-island/own-exhibition-FE/assets/48711263/9334bba1-52d9-4250-8030-cd12ab39a8d7)|
