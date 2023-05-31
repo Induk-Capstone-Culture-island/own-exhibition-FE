@@ -12,7 +12,7 @@
 
 ### 팀원
 | Front-end | Back-end |
-| --- | --- |
+| :---: | :---: |
 | [김태현](https://github.com/thyeone) | [전영준](https://github.com/JayYJ1) |
 ### 기술 스택
 #### Front-End
